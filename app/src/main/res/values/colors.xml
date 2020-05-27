@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mandarin_red">#e55039</color>
+    <color name="jalapino_red">#b71540</color>
+    <color name="jalapino_red_dark">#991235</color>
+    <color name="mandarin_red_transparent_less">#E6e55039</color>
+    <color name="jalapino_red_transparent_less">#E6b71540</color>
+    <color name="white">@android:color/white</color>
+    <color name="blue_transparent_less">#E65C6BC0</color>
+    <color name="blue_dark_transparent_less">#E6283593</color>
+    <color name="dot">#E2E2E2</color>
+    <color name="black900">#212121</color>
+    <color name="black800">#424242</color>
+    <color name="add_green">#00B643</color>
+
+</resources>

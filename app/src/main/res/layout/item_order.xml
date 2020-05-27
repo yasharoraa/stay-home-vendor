@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/defult_item_layout_margin_double"
+    android:background="@drawable/store_background"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_toStartOf="@id/status_text_view"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/new_dot"
+            android:layout_width="@dimen/defult_item_layout_margin"
+            android:layout_height="@dimen/defult_item_layout_margin"
+            android:layout_marginEnd="@dimen/defult_item_layout_margin"
+            android:src="@drawable/online_dot"/>
+
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:textSize="12sp"
+            android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+            android:textColor="@color/black800"
+            tools:text="12 May 2020" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/order_id_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black800"
+        android:alpha="0.8"
+        android:layout_below="@id/top_layout"
+        android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+        android:layout_toStartOf="@id/status_text_view"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="OID-45616554561561" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/status_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Out For\n Delivery"
+        android:textSize="12sp"
+        tools:drawableTint="@color/jalapino_red"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        tools:drawableTop="@drawable/ic_local_shipping_black_24dp"/>
+    <TextView
+        android:id="@+id/distance_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:layout_marginEnd="@dimen/defult_item_layout_margin_double"
+        android:layout_toStartOf="@id/status_text_view"
+        android:layout_below="@id/order_id_text_view"
+        android:textColor="@color/black800"
+        tools:text="12 km away" />
+
+
+
+</RelativeLayout>

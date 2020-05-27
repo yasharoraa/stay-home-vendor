@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">8sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">10sp</dimen>
+    <dimen name="defult_item_layout_margin_half">4dp</dimen>
+    <dimen name="defult_item_layout_margin">8dp</dimen>
+    <dimen name="defult_item_layout_margin_double">16dp</dimen>
+    <dimen name="profile_image">100dp</dimen>
+    <dimen name="defult_item_layout_margin_double_plus_icon_padding">40dp</dimen>
+    <dimen name="recycler_view_padding">50dp</dimen>
+    <dimen name="bottom_progress_bar_size">36dp</dimen>
+    <dimen name="view_order_box_dim">150dp</dimen>
+    <dimen name="defult_item_layout_margin_triple">24dp</dimen>
+</resources>

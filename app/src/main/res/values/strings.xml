@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StayHome</string>
+    <string name="title_activity_home_store">HomeActivityStore</string>
+    <string
+        name="terms"><a href="https://www.adalbadal.com/terms.html">Terms of Service</a></string>
+
+    <string
+        name="privacy"><a href="https://www.adalbadal.com/privacy_policy.html">Privacy Policy</a></string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>

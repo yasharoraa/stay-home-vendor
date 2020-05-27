@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="@dimen/defult_item_layout_margin_double"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/button_upload_image"
+            android:fontFamily="sans-serif-light"
+            android:text="Add Image"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/black900"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_upload_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/button_search"
+            android:minHeight="0dp"
+            android:paddingStart="@dimen/defult_item_layout_margin_double"
+            android:paddingTop="@dimen/defult_item_layout_margin"
+            android:paddingEnd="@dimen/defult_item_layout_margin_double"
+            android:paddingBottom="@dimen/defult_item_layout_margin"
+            android:text="Upload"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/defult_item_layout_margin_double"
+        android:drawableTop="@drawable/ic_open_in_new_black_24dp"
+        android:fontFamily="@font/roboto_mono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="@dimen/defult_item_layout_margin_half"
+        android:paddingTop="@dimen/defult_item_layout_margin_half"
+        android:paddingStart="@dimen/defult_item_layout_margin_double"
+        android:paddingEnd="@dimen/defult_item_layout_margin_double"
+        app:layout_constraintTop_toBottomOf="@id/crop_view"
+        android:textColor="@color/jalapino_red"
+        android:drawablePadding="@dimen/defult_item_layout_margin"
+        android:text="Select Image"
+        android:background="@drawable/button_try_again"/>
+
+
+
+    <com.takusemba.cropme.CropLayout
+        android:id="@+id/crop_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cropme_background_alpha="80%"
+        app:cropme_frame_height_percent="90%"
+        app:cropme_frame_width_percent="90%"
+        app:cropme_max_scale="3.0"
+        app:cropme_overlay_shape="rectangle"
+        app:cropme_with_border="true"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        />
+
+    <TextView
+        android:id="@+id/button_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/dot"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/defult_item_layout_margin_double"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:text="Skip >"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

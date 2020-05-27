@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_order_shimmer_layout"/>
+
+    <include
+        layout="@layout/layout_error"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+
+        />
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/full_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ViewOrderActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/view_order_view"
+                android:layout_width="@dimen/view_order_box_dim"
+                android:layout_height="@dimen/view_order_box_dim"
+                android:layout_margin="@dimen/defult_item_layout_margin_double"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/view_order_background" />
+
+                <TextView
+                    android:id="@+id/view_order_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/view_order_selectable_background"
+                    android:gravity="center"
+                    android:text="View\nOrder"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/address_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:paddingTop="@dimen/defult_item_layout_margin_double"
+                android:gravity="center_horizontal"
+                android:paddingEnd="@dimen/defult_item_layout_margin_double"
+                android:paddingBottom="@dimen/defult_item_layout_margin_double"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:drawableTint="@color/jalapino_red"
+                app:drawableTopCompat="@drawable/ic_home_black_24dp"
+                tools:text="18 B Block, Ward No 15 Sri Karanpur\nfatak waali seedhi gali" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/id_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/defult_item_layout_margin_double"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:drawableTint="@color/jalapino_red"
+            android:drawablePadding="@dimen/defult_item_layout_margin_double"
+            tools:text="OID-65451446516"
+            app:drawableLeftCompat="@drawable/ic_radio_button_checked_black_24dp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/phone_number_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/defult_item_layout_margin_double"
+            android:autoLink="phone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:drawableTint="@color/jalapino_red"
+            android:drawablePadding="@dimen/defult_item_layout_margin_double"
+            tools:text="+917014911292"
+            app:drawableLeftCompat="@drawable/ic_phone_black_24dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/location_address_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/defult_item_layout_margin_double"
+            android:background="?selectableItemBackground"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:drawableTint="@color/jalapino_red"
+            android:drawablePadding="@dimen/defult_item_layout_margin_double"
+            tools:text="Jaisingh Marg Sri Karanpur Sri Gangangar , 335073"
+            app:drawableLeftCompat="@drawable/ic_location_on_black_24dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/dir_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:padding="@dimen/defult_item_layout_margin_double"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:drawableTint="@color/jalapino_red"
+            android:drawablePadding="@dimen/defult_item_layout_margin_double"
+            android:text="Locate coordinates on map"
+            app:drawableLeftCompat="@drawable/ic_directions_black_24dp"/>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:progressBarStyleSmall"
+        android:layout_gravity="bottom|center_horizontal"
+        android:paddingBottom="@dimen/defult_item_layout_margin_double"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:colorBackground"/>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_bottom_sheet_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Accept Order"
+            android:textAllCaps="true"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            app:drawableStartCompat="@drawable/ic_check_circle_black_24dp"
+            android:paddingStart="@dimen/defult_item_layout_margin_double"
+            android:paddingEnd="@dimen/defult_item_layout_margin_double_plus_icon_padding"
+            android:paddingTop="@dimen/defult_item_layout_margin_double"
+            android:paddingBottom="@dimen/defult_item_layout_margin_double"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:colorBackground"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_bottom_sheet_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Accept Order"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:textAllCaps="true"
+            app:drawableStartCompat="@drawable/ic_check_circle_black_24dp"
+            android:paddingStart="@dimen/defult_item_layout_margin_double"
+            android:paddingEnd="@dimen/defult_item_layout_margin_double_plus_icon_padding"
+            android:paddingTop="@dimen/defult_item_layout_margin_double"
+            android:paddingBottom="@dimen/defult_item_layout_margin_double"
+            />
+
+    </LinearLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <size android:width="@dimen/defult_item_layout_margin"
+        android:height="@dimen/defult_item_layout_margin"/>
+    <solid android:color="@color/jalapino_red"/>
+</shape>
