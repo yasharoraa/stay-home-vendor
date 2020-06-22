@@ -8,4 +8,20 @@
         name="privacy"><a href="https://www.adalbadal.com/privacy_policy.html">Privacy Policy</a></string>
     <!-- Strings used for fragments for navigation -->
 
+    <string name="valid_password">Enter a valid 6–20 character password with at least one digit and letter</string>
+    <string name="password_do_not_match">Passwords do not match</string>
+    <string name="already_have_a_account">Already have an account?</string>
+    <string name="reset">Reset</string>
+    <string name="forgot_password">Forgot your password ? </string>
+    <string name="login">Login</string>
+    <string name="check_connection">Please check your internet connection and try again.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="support">Support</string>
+    <string name="about_us">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="email" translatable="false"><u>indstayhome@gmail.com</u></string>
+    <string name="email_dev" translatable="false">Email :</string>
+    <string name="copy" translatable="false">copy</string>
+    <string name="whatsapp_call" translatable="false">Whatsapp &amp; Call:</string>
+    <string name="whatsapp_support" translatable="false"><u>Whatsapp Support</u></string>
 </resources>

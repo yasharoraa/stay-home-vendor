@@ -12,5 +12,8 @@
     <color name="black900">#212121</color>
     <color name="black800">#424242</color>
     <color name="add_green">#00B643</color>
+    <color name="mandarin_red_transparent">#B3e55039</color>
+    <color name="jalapino_red_transparent">#B3b71540</color>
+
 
 </resources>

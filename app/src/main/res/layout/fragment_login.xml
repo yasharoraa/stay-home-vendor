@@ -143,15 +143,15 @@
         android:layout_width="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="12dp"
-        android:visibility="gone"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/action_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/white"
-            android:text="Already have a account?"/>
+            tools:text="Already have a account?"/>
         <TextView
             android:id="@+id/sign_in"
             android:layout_width="wrap_content"
@@ -159,7 +159,7 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:layout_marginStart="4dp"
-            android:text="Login"/>
+            tools:text="Login"/>
     </LinearLayout>
 
 

@@ -47,4 +47,21 @@
         <item name="colorAccent">@color/jalapino_red</item>
     </style>
 
+    <style name="ResetActivityTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+    </style>
+
+    <style name="AppTheme.AddressDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/jalapino_red</item>
+        <item name="colorPrimaryDark">@color/jalapino_red</item>
+        <item name="colorAccent">@color/jalapino_red</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/white_rounded_rectangle</item>
+
+    </style>
+
 </resources>
